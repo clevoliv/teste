@@ -1,0 +1,16 @@
+import sys
+import validators
+
+def main():
+
+
+    email = input("Type your email: ").strip()
+
+    if validators.email(email):
+        print('Valid')
+    else:
+        print('Invalid')
+
+
+if __name__ == "__main__":
+    main()
